@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+var input = prompt("Please enter a number");
+
+var mod1 = (input%1000);
+var calc1 = (input - mod1);
+var calc1A = (calc1 / 1000);
+
+var mod2 = (input%100);
+var calc2 = (mod1 - mod2);
+var calc2A =  (calc2 / 100);
+
+var mod3 = (input%10);
+var calc3 = (mod2 - mod3);
+var calc3A =(calc3 / 10);
+
+var mod4 = (input%1);
+var calc4 = (mod3 - mod4);
+var calc4A = (calc4 /1);
+
+console.log(calc1A + " thousands " );
+console.log(calc2A + " hundreths ");
+console.log(calc3A + " tenths ");
+console.log(calc4A + " ones ");
+
+
+</script>
+</body>
+</html>
